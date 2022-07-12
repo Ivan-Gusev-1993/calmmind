@@ -4,7 +4,13 @@
 }
 /* Extra large */
 @media screen and (max-width: 1200px) {
-    
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .hero__image {
+        max-width: 450px;
+    }
 }
 /* large */
 @media screen and (max-width: 992px) {
@@ -15,12 +21,30 @@
 }
 /* Medium */
 @media screen and (max-width: 768px) {
+    .header {
+        margin-bottom: 0;
+    }
+
     .nav-wrapper{
         display: none;
     }
+
+    .mobile-stores {
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
     .nav-wrapper-mobile {
         display: block;
     }
+
+    .hero__title {
+        text-align: center;
+    }
+
 }
 /* Small */
 @media screen and (max-width: 576px) {
