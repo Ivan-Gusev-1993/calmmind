@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calmmind</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -48,9 +49,9 @@
         <main class="content">
             <section class="hero">
                 <div class="hero__store">
-                    <p class="hero__title">Time to relax.<br>
+                    <h1 class="hero__title">Time to relax.<br>
                         Make your mind more strong and flexible!
-                    </p>
+                    </h1>
 
                     <ul class="mobile-stores">
                         <li class="mobile-stores__item">
@@ -74,13 +75,52 @@
                 </div>
                 <img src="images/ipad-application-preview.jpg" alt="ipad-application-preview" class="hero__image">
             </section>
+            
+            <section class="section">
+                <h2 class="reviewer-text-one">
+                    What the peeps thing for our app?
+                </h2>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                    
+                      <div class="swiper-slide"><p class="reviewer-text-two">
+                        This is the best app ever for meditation! Easy to use and very intuitive. I will recommend to all my friends!
+                    </p></div>
+                      <div class="swiper-slide"><p class="reviewer-text-two">
+                        This is the best app ever for meditation! Easy to use and very intuitive. I will recommend to all my friends!
+                    </p></div>
+                      <div class="swiper-slide"><p class="reviewer-text-two">
+                        This is the best app ever for meditation! Easy to use and very intuitive. I will recommend to all my friends!
+                    </p></div>
+                    </div>
+                  
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+
+            </div>
+            </section>
+
+
+
 
         </main>
 
-
-
-
     </div>
+
+ <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+
+<script>
+    const swiper = new Swiper('.swiper', {
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
 
 </body>
 
